@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5C554DB149D5E1600B8D46D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C554DA149D5E1600B8D46D /* UIKit.framework */; };
+		A5C554DD149D5E1600B8D46D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C554DC149D5E1600B8D46D /* Foundation.framework */; };
+		A5C554DF149D5E1600B8D46D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C554DE149D5E1600B8D46D /* CoreGraphics.framework */; };
+		A5C554E5149D5E1600B8D46D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5C554E3149D5E1600B8D46D /* InfoPlist.strings */; };
+		A5C554E7149D5E1600B8D46D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C554E6149D5E1600B8D46D /* main.m */; };
+		A5C554EB149D5E1700B8D46D /* GroBarkAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C554EA149D5E1700B8D46D /* GroBarkAppDelegate.m */; };
+		A5C554EE149D5E1700B8D46D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C554EC149D5E1700B8D46D /* MainStoryboard.storyboard */; };
+		A5C554F1149D5E1700B8D46D /* GroBarkMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C554F0149D5E1700B8D46D /* GroBarkMasterViewController.m */; };
+		A5C554F4149D5E1700B8D46D /* GroBarkDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C554F3149D5E1700B8D46D /* GroBarkDetailViewController.m */; };
+		A5C554FC149D5E1700B8D46D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C554FB149D5E1700B8D46D /* SenTestingKit.framework */; };
+		A5C554FD149D5E1700B8D46D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C554DA149D5E1600B8D46D /* UIKit.framework */; };
+		A5C554FE149D5E1700B8D46D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C554DC149D5E1600B8D46D /* Foundation.framework */; };
+		A5C55506149D5E1700B8D46D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5C55504149D5E1700B8D46D /* InfoPlist.strings */; };
+		A5C55509149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C55508149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5C554FF149D5E1700B8D46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C554CD149D5E1600B8D46D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C554D5149D5E1600B8D46D;
+			remoteInfo = GroBarkMileageLogIPadApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5C554D6149D5E1600B8D46D /* GroBarkMileageLogIPadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroBarkMileageLogIPadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C554DA149D5E1600B8D46D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A5C554DC149D5E1600B8D46D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5C554DE149D5E1600B8D46D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A5C554E2149D5E1600B8D46D /* GroBarkMileageLogIPadApp-Info.plist */ = {isa = PBXFileReference; path = "GroBarkMileageLogIPadApp-Info.plist"; sourceTree = "<group>"; };
+		A5C554E4149D5E1600B8D46D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5C554E6149D5E1600B8D46D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5C554E8149D5E1700B8D46D /* GroBarkMileageLogIPadApp-Prefix.pch */ = {isa = PBXFileReference; path = "GroBarkMileageLogIPadApp-Prefix.pch"; sourceTree = "<group>"; };
+		A5C554E9149D5E1700B8D46D /* GroBarkAppDelegate.h */ = {isa = PBXFileReference; path = GroBarkAppDelegate.h; sourceTree = "<group>"; };
+		A5C554EA149D5E1700B8D46D /* GroBarkAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroBarkAppDelegate.m; sourceTree = "<group>"; };
+		A5C554ED149D5E1700B8D46D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A5C554EF149D5E1700B8D46D /* GroBarkMasterViewController.h */ = {isa = PBXFileReference; path = GroBarkMasterViewController.h; sourceTree = "<group>"; };
+		A5C554F0149D5E1700B8D46D /* GroBarkMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroBarkMasterViewController.m; sourceTree = "<group>"; };
+		A5C554F2149D5E1700B8D46D /* GroBarkDetailViewController.h */ = {isa = PBXFileReference; path = GroBarkDetailViewController.h; sourceTree = "<group>"; };
+		A5C554F3149D5E1700B8D46D /* GroBarkDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroBarkDetailViewController.m; sourceTree = "<group>"; };
+		A5C554FA149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroBarkMileageLogIPadAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C554FB149D5E1700B8D46D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A5C55503149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests-Info.plist */ = {isa = PBXFileReference; path = "GroBarkMileageLogIPadAppTests-Info.plist"; sourceTree = "<group>"; };
+		A5C55505149D5E1700B8D46D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5C55507149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.h */ = {isa = PBXFileReference; path = GroBarkMileageLogIPadAppTests.h; sourceTree = "<group>"; };
+		A5C55508149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroBarkMileageLogIPadAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5C554D3149D5E1600B8D46D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C554DB149D5E1600B8D46D /* UIKit.framework in Frameworks */,
+				A5C554DD149D5E1600B8D46D /* Foundation.framework in Frameworks */,
+				A5C554DF149D5E1600B8D46D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C554F6149D5E1700B8D46D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C554FC149D5E1700B8D46D /* SenTestingKit.framework in Frameworks */,
+				A5C554FD149D5E1700B8D46D /* UIKit.framework in Frameworks */,
+				A5C554FE149D5E1700B8D46D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5C554CB149D5E1600B8D46D = {
+			isa = PBXGroup;
+			children = (
+				A5C554E0149D5E1600B8D46D /* GroBarkMileageLogIPadApp */,
+				A5C55501149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests */,
+				A5C554D9149D5E1600B8D46D /* Frameworks */,
+				A5C554D7149D5E1600B8D46D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5C554D7149D5E1600B8D46D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5C554D6149D5E1600B8D46D /* GroBarkMileageLogIPadApp.app */,
+				A5C554FA149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5C554D9149D5E1600B8D46D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5C554DA149D5E1600B8D46D /* UIKit.framework */,
+				A5C554DC149D5E1600B8D46D /* Foundation.framework */,
+				A5C554DE149D5E1600B8D46D /* CoreGraphics.framework */,
+				A5C554FB149D5E1700B8D46D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5C554E0149D5E1600B8D46D /* GroBarkMileageLogIPadApp */ = {
+			isa = PBXGroup;
+			children = (
+				A5C554E9149D5E1700B8D46D /* GroBarkAppDelegate.h */,
+				A5C554EA149D5E1700B8D46D /* GroBarkAppDelegate.m */,
+				A5C554EC149D5E1700B8D46D /* MainStoryboard.storyboard */,
+				A5C554EF149D5E1700B8D46D /* GroBarkMasterViewController.h */,
+				A5C554F0149D5E1700B8D46D /* GroBarkMasterViewController.m */,
+				A5C554F2149D5E1700B8D46D /* GroBarkDetailViewController.h */,
+				A5C554F3149D5E1700B8D46D /* GroBarkDetailViewController.m */,
+				A5C554E1149D5E1600B8D46D /* Supporting Files */,
+			);
+			path = GroBarkMileageLogIPadApp;
+			sourceTree = "<group>";
+		};
+		A5C554E1149D5E1600B8D46D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5C554E2149D5E1600B8D46D /* GroBarkMileageLogIPadApp-Info.plist */,
+				A5C554E3149D5E1600B8D46D /* InfoPlist.strings */,
+				A5C554E6149D5E1600B8D46D /* main.m */,
+				A5C554E8149D5E1700B8D46D /* GroBarkMileageLogIPadApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5C55501149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5C55507149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.h */,
+				A5C55508149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.m */,
+				A5C55502149D5E1700B8D46D /* Supporting Files */,
+			);
+			path = GroBarkMileageLogIPadAppTests;
+			sourceTree = "<group>";
+		};
+		A5C55502149D5E1700B8D46D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5C55503149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests-Info.plist */,
+				A5C55504149D5E1700B8D46D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5C554D5149D5E1600B8D46D /* GroBarkMileageLogIPadApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C5550C149D5E1700B8D46D /* Build configuration list for PBXNativeTarget "GroBarkMileageLogIPadApp" */;
+			buildPhases = (
+				A5C554D2149D5E1600B8D46D /* Sources */,
+				A5C554D3149D5E1600B8D46D /* Frameworks */,
+				A5C554D4149D5E1600B8D46D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GroBarkMileageLogIPadApp;
+			productName = GroBarkMileageLogIPadApp;
+			productReference = A5C554D6149D5E1600B8D46D /* GroBarkMileageLogIPadApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5C554F9149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C5550F149D5E1700B8D46D /* Build configuration list for PBXNativeTarget "GroBarkMileageLogIPadAppTests" */;
+			buildPhases = (
+				A5C554F5149D5E1700B8D46D /* Sources */,
+				A5C554F6149D5E1700B8D46D /* Frameworks */,
+				A5C554F7149D5E1700B8D46D /* Resources */,
+				A5C554F8149D5E1700B8D46D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C55500149D5E1700B8D46D /* PBXTargetDependency */,
+			);
+			name = GroBarkMileageLogIPadAppTests;
+			productName = GroBarkMileageLogIPadAppTests;
+			productReference = A5C554FA149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5C554CD149D5E1600B8D46D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A5C554D0149D5E1600B8D46D /* Build configuration list for PBXProject "GroBarkMileageLogIPadApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5C554CB149D5E1600B8D46D;
+			productRefGroup = A5C554D7149D5E1600B8D46D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5C554D5149D5E1600B8D46D /* GroBarkMileageLogIPadApp */,
+				A5C554F9149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5C554D4149D5E1600B8D46D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C554E5149D5E1600B8D46D /* InfoPlist.strings in Resources */,
+				A5C554EE149D5E1700B8D46D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C554F7149D5E1700B8D46D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C55506149D5E1700B8D46D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5C554F8149D5E1700B8D46D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5C554D2149D5E1600B8D46D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C554E7149D5E1600B8D46D /* main.m in Sources */,
+				A5C554EB149D5E1700B8D46D /* GroBarkAppDelegate.m in Sources */,
+				A5C554F1149D5E1700B8D46D /* GroBarkMasterViewController.m in Sources */,
+				A5C554F4149D5E1700B8D46D /* GroBarkDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C554F5149D5E1700B8D46D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C55509149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5C55500149D5E1700B8D46D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C554D5149D5E1600B8D46D /* GroBarkMileageLogIPadApp */;
+			targetProxy = A5C554FF149D5E1700B8D46D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5C554E3149D5E1600B8D46D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5C554E4149D5E1600B8D46D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A5C554EC149D5E1700B8D46D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5C554ED149D5E1700B8D46D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		A5C55504149D5E1700B8D46D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5C55505149D5E1700B8D46D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5C5550A149D5E1700B8D46D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A5C5550B149D5E1700B8D46D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5C5550D149D5E1700B8D46D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GroBarkMileageLogIPadApp/GroBarkMileageLogIPadApp-Prefix.pch";
+				INFOPLIST_FILE = "GroBarkMileageLogIPadApp/GroBarkMileageLogIPadApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5C5550E149D5E1700B8D46D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GroBarkMileageLogIPadApp/GroBarkMileageLogIPadApp-Prefix.pch";
+				INFOPLIST_FILE = "GroBarkMileageLogIPadApp/GroBarkMileageLogIPadApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A5C55510149D5E1700B8D46D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GroBarkMileageLogIPadApp.app/GroBarkMileageLogIPadApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GroBarkMileageLogIPadApp/GroBarkMileageLogIPadApp-Prefix.pch";
+				INFOPLIST_FILE = "GroBarkMileageLogIPadAppTests/GroBarkMileageLogIPadAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A5C55511149D5E1700B8D46D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GroBarkMileageLogIPadApp.app/GroBarkMileageLogIPadApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GroBarkMileageLogIPadApp/GroBarkMileageLogIPadApp-Prefix.pch";
+				INFOPLIST_FILE = "GroBarkMileageLogIPadAppTests/GroBarkMileageLogIPadAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5C554D0149D5E1600B8D46D /* Build configuration list for PBXProject "GroBarkMileageLogIPadApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C5550A149D5E1700B8D46D /* Debug */,
+				A5C5550B149D5E1700B8D46D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C5550C149D5E1700B8D46D /* Build configuration list for PBXNativeTarget "GroBarkMileageLogIPadApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C5550D149D5E1700B8D46D /* Debug */,
+				A5C5550E149D5E1700B8D46D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5C5550F149D5E1700B8D46D /* Build configuration list for PBXNativeTarget "GroBarkMileageLogIPadAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C55510149D5E1700B8D46D /* Debug */,
+				A5C55511149D5E1700B8D46D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5C554CD149D5E1600B8D46D /* Project object */;
+}
