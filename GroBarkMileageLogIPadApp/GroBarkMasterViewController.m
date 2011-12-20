@@ -13,6 +13,10 @@
 @implementation GroBarkMasterViewController
 
 @synthesize detailViewController = _detailViewController;
+<<<<<<< HEAD
+=======
+@synthesize mileageWeeks;
+>>>>>>> parent of 12484e1... messing around with git
 
 - (void)awakeFromNib
 {
@@ -30,11 +34,20 @@
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
+<<<<<<< HEAD
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.detailViewController = (GroBarkDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
+=======
+{    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    self.detailViewController = (GroBarkDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionNone];
+    
+    self.mileageWeeks = [[NSArray alloc] initWithObjects:@"Sleepy", @"Sneezy", @"Bashful", @"Happy", @"Doc", @"Grumpy", @"Dopey", @"Thorin" @"Dorin", @"Nori", @"Ori", @"Balin", @"Dwalin", @"Fili", @"Kili", @"Oin", @"Gloin", @"Bifur", @"Bofur", @"Bombur", nil];
+>>>>>>> parent of 12484e1... messing around with git
 }
 
 - (void)viewDidUnload
@@ -42,6 +55,10 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+<<<<<<< HEAD
+=======
+    self.mileageWeeks = nil;
+>>>>>>> parent of 12484e1... messing around with git
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -70,6 +87,28 @@
     return YES;
 }
 
+<<<<<<< HEAD
+=======
+#pragma mark -
+#pragma mark Table View Data Source Methods
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section {
+    return [self.mileageWeeks count]; 
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: SimpleTableIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]
+                 initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier];
+    }
+    NSUInteger row = [indexPath row]; 
+    cell.textLabel.text = [mileageWeeks objectAtIndex:row];
+    return cell;
+}
+
+>>>>>>> parent of 12484e1... messing around with git
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
