@@ -21,7 +21,6 @@
 		A5C554FE149D5E1700B8D46D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C554DC149D5E1600B8D46D /* Foundation.framework */; };
 		A5C55506149D5E1700B8D46D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5C55504149D5E1700B8D46D /* InfoPlist.strings */; };
 		A5C55509149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C55508149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.m */; };
-		A5C55515149D5E6100B8D46D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5C55514149D5E6100B8D46D /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,24 +38,23 @@
 		A5C554DA149D5E1600B8D46D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A5C554DC149D5E1600B8D46D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A5C554DE149D5E1600B8D46D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A5C554E2149D5E1600B8D46D /* GroBarkMileageLogIPadApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GroBarkMileageLogIPadApp-Info.plist"; sourceTree = "<group>"; };
+		A5C554E2149D5E1600B8D46D /* GroBarkMileageLogIPadApp-Info.plist */ = {isa = PBXFileReference; path = "GroBarkMileageLogIPadApp-Info.plist"; sourceTree = "<group>"; };
 		A5C554E4149D5E1600B8D46D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A5C554E6149D5E1600B8D46D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A5C554E8149D5E1700B8D46D /* GroBarkMileageLogIPadApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GroBarkMileageLogIPadApp-Prefix.pch"; sourceTree = "<group>"; };
-		A5C554E9149D5E1700B8D46D /* GroBarkAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroBarkAppDelegate.h; sourceTree = "<group>"; };
+		A5C554E8149D5E1700B8D46D /* GroBarkMileageLogIPadApp-Prefix.pch */ = {isa = PBXFileReference; path = "GroBarkMileageLogIPadApp-Prefix.pch"; sourceTree = "<group>"; };
+		A5C554E9149D5E1700B8D46D /* GroBarkAppDelegate.h */ = {isa = PBXFileReference; path = GroBarkAppDelegate.h; sourceTree = "<group>"; };
 		A5C554EA149D5E1700B8D46D /* GroBarkAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroBarkAppDelegate.m; sourceTree = "<group>"; };
 		A5C554ED149D5E1700B8D46D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		A5C554EF149D5E1700B8D46D /* GroBarkMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroBarkMasterViewController.h; sourceTree = "<group>"; };
+		A5C554EF149D5E1700B8D46D /* GroBarkMasterViewController.h */ = {isa = PBXFileReference; path = GroBarkMasterViewController.h; sourceTree = "<group>"; };
 		A5C554F0149D5E1700B8D46D /* GroBarkMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroBarkMasterViewController.m; sourceTree = "<group>"; };
-		A5C554F2149D5E1700B8D46D /* GroBarkDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroBarkDetailViewController.h; sourceTree = "<group>"; };
+		A5C554F2149D5E1700B8D46D /* GroBarkDetailViewController.h */ = {isa = PBXFileReference; path = GroBarkDetailViewController.h; sourceTree = "<group>"; };
 		A5C554F3149D5E1700B8D46D /* GroBarkDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroBarkDetailViewController.m; sourceTree = "<group>"; };
 		A5C554FA149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroBarkMileageLogIPadAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C554FB149D5E1700B8D46D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		A5C55503149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GroBarkMileageLogIPadAppTests-Info.plist"; sourceTree = "<group>"; };
+		A5C55503149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests-Info.plist */ = {isa = PBXFileReference; path = "GroBarkMileageLogIPadAppTests-Info.plist"; sourceTree = "<group>"; };
 		A5C55505149D5E1700B8D46D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A5C55507149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroBarkMileageLogIPadAppTests.h; sourceTree = "<group>"; };
+		A5C55507149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.h */ = {isa = PBXFileReference; path = GroBarkMileageLogIPadAppTests.h; sourceTree = "<group>"; };
 		A5C55508149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroBarkMileageLogIPadAppTests.m; sourceTree = "<group>"; };
-		A5C55514149D5E6100B8D46D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +129,6 @@
 		A5C554E1149D5E1600B8D46D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A5C55514149D5E6100B8D46D /* icon.png */,
 				A5C554E2149D5E1600B8D46D /* GroBarkMileageLogIPadApp-Info.plist */,
 				A5C554E3149D5E1600B8D46D /* InfoPlist.strings */,
 				A5C554E6149D5E1600B8D46D /* main.m */,
@@ -231,7 +228,6 @@
 			files = (
 				A5C554E5149D5E1600B8D46D /* InfoPlist.strings in Resources */,
 				A5C554EE149D5E1700B8D46D /* MainStoryboard.storyboard in Resources */,
-				A5C55515149D5E6100B8D46D /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
