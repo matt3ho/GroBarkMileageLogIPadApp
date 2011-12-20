@@ -10,8 +10,12 @@
 
 @class GroBarkDetailViewController;
 
-@interface GroBarkMasterViewController : UITableViewController
+@interface GroBarkMasterViewController : UITableViewController 
+<UITableViewDelegate, UITableViewDataSource> {
+    NSArray *mileageWeeks;
+}
 
 @property (strong, nonatomic) GroBarkDetailViewController *detailViewController;
+@property (strong, nonatomic) NSArray *mileageWeeks;
 
 @end

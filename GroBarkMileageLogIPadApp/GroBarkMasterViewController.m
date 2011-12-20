@@ -13,6 +13,7 @@
 @implementation GroBarkMasterViewController
 
 @synthesize detailViewController = _detailViewController;
+@synthesize mileageWeeks;
 
 - (void)awakeFromNib
 {
@@ -30,11 +31,12 @@
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
-{
-    [super viewDidLoad];
+{    [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.detailViewController = (GroBarkDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionNone];
+    
+    self.mileageWeeks = [[NSArray alloc] initWithObjects:@"Sleepy", @"Sneezy", @"Bashful", @"Happy", @"Doc", @"Grumpy", @"Dopey", @"Thorin" @"Dorin", @"Nori", @"Ori", @"Balin", @"Dwalin", @"Fili", @"Kili", @"Oin", @"Gloin", @"Bifur", @"Bofur", @"Bombur", nil];
 }
 
 - (void)viewDidUnload
@@ -42,6 +44,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    self.mileageWeeks = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -68,6 +71,25 @@
 {
     // Return YES for supported orientations
     return YES;
+}
+
+#pragma mark -
+#pragma mark Table View Data Source Methods
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section {
+    return [self.mileageWeeks count]; 
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: SimpleTableIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]
+                 initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier];
+    }
+    NSUInteger row = [indexPath row]; 
+    cell.textLabel.text = [mileageWeeks objectAtIndex:row];
+    return cell;
 }
 
 /*
