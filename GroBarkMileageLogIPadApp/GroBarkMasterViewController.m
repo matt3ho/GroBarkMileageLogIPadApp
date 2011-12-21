@@ -36,7 +36,38 @@
     self.detailViewController = (GroBarkDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionNone];
     
-    self.mileageWeeks = [[NSArray alloc] initWithObjects:@"Sleepy", @"Sneezy", @"Bashful", @"Happy", @"Doc", @"Grumpy", @"Dopey", @"Thorin" @"Dorin", @"Nori", @"Ori", @"Balin", @"Dwalin", @"Fili", @"Kili", @"Oin", @"Gloin", @"Bifur", @"Bofur", @"Bombur", nil];
+    NSInteger numDates = 50;
+    NSMutableArray *initialDates = [[NSMutableArray alloc] initWithCapacity:numDates];
+    NSDate *sunday_june_5_2011 = [[NSDate alloc] initWithTimeIntervalSince1970:1307268001];
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
+    for (int i = 0; i < numDates; i++) {
+        NSDateComponents *component = [[NSDateComponents alloc] init ];
+        if (0 == i % 2) {
+            [component setDay: i*7 ];
+        }
+        else {
+            [component setDay: i*7-1 ];
+        }
+        
+        [ initialDates addObject: [gregorian dateByAddingComponents:component toDate:sunday_june_5_2011 options:0] ];
+    }
+    
+    NSMutableArray *mileageWeeksStrings = [[NSMutableArray alloc] initWithCapacity:numDates/2];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [ dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    for (int i = 0; i < numDates; i++)
+    {
+        if (0 == i % 2) {
+            [mileageWeeksStrings addObject: [dateFormatter stringFromDate:[initialDates objectAtIndex:i]]];
+        }
+        else {
+            NSString *weekRangeString = [mileageWeeksStrings objectAtIndex:i/2];
+            [mileageWeeksStrings replaceObjectAtIndex:i/2 withObject: [[weekRangeString stringByAppendingString: @" - "] stringByAppendingString:[dateFormatter stringFromDate: [initialDates objectAtIndex:i ]]]];
+        }
+    }
+    
+    self.mileageWeeks = mileageWeeksStrings;
 }
 
 - (void)viewDidUnload
