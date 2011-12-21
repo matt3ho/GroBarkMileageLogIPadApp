@@ -441,6 +441,7 @@
 				A5C5550E149D5E1700B8D46D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5C5550F149D5E1700B8D46D /* Build configuration list for PBXNativeTarget "GroBarkMileageLogIPadAppTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +450,7 @@
 				A5C55511149D5E1700B8D46D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

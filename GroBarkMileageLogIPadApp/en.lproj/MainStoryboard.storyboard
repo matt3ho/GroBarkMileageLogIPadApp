@@ -35,11 +35,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="BvD-o6-3Vx">
-                                <rect key="frame" x="0.0" y="136" width="703" height="622"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gro-Bark (Ontario) Ltd. 155 Frobisher Dr. Waterloo ON N2V 2E1 Phone (519) 885-3411" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" id="hwn-wg-MVo">
                                 <rect key="frame" x="0.0" y="0.0" width="181" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -137,6 +132,7 @@
                     <navigationItem key="navigationItem" title="Detail" id="52"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="27" id="29"/>
+                        <outlet property="monthLabel" destination="QMR-WG-8h1" id="3M7-qW-hKv"/>
                     </connections>
                 </viewController>
             </objects>
@@ -197,6 +193,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GroBarkDetailViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="monthLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="GroBarkMasterViewController" superclassName="UITableViewController">

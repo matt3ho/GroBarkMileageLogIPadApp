@@ -123,6 +123,21 @@
     return cell;
 }
 
+#pragma mark -
+#pragma mark Table Delegate Methods
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSUInteger row = [indexPath row];
+    NSString *shortMonth = [[self.mileageWeeks objectAtIndex:row] substringWithRange:NSMakeRange(0,3)];
+    self.detailViewController.monthLabel.text = shortMonth;
+//    self.detailViewController.detailItem = shortMonth;
+//    President *prez = [self.list objectAtIndex:row];
+//    PresidentDetailController *childController = [[PresidentDetailController alloc] initWithStyle:UITableViewStyleGrouped];
+//    childController.title = prez.name; 
+//    childController.president = prez;
+//    [self.navigationController pushViewController:childController animated:YES];
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

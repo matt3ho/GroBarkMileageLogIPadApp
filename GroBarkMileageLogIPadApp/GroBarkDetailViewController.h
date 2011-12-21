@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GroBarkDetailViewController : UIViewController <UISplitViewControllerDelegate>
+@interface GroBarkDetailViewController : UIViewController <UISplitViewControllerDelegate> {
+    NSString *month;
+}
 
 @property (strong, nonatomic) id detailItem;
 
 @property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
+@property (strong, nonatomic) NSString *month;
+@property (strong, nonatomic) IBOutlet UILabel *monthLabel;
 
 @end
