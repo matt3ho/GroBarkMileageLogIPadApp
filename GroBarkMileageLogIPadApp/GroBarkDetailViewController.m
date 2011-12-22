@@ -21,6 +21,17 @@
 @synthesize month;
 @synthesize monthLabel;
 
+@synthesize tvCell;
+
+- (IBAction)textFieldDoneEditing:(id)sender { 
+    [sender resignFirstResponder];
+}
+
+- (IBAction)backgroundTap:(id)sender { 
+//    [nameField resignFirstResponder]; 
+//    [numberField resignFirstResponder];
+}
+
 #pragma mark - Managing the detail item
 
 - (void)setDetailItem:(id)newDetailItem
@@ -110,6 +121,47 @@
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
+}
+
+#pragma mark -
+#pragma mark Table View Data Source Methods
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section {
+    return 4; 
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *DispatchEntryCellIdentifier = @"DispatchEntryCellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: DispatchEntryCellIdentifier];
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"DispatchEntryCell"
+                                                     owner:self options:nil];
+        if ([nib count] > 0) { 
+            cell = self.tvCell;
+        } else {
+            NSLog(@"failed to load CustomCell nib file!");
+        }
+    }
+//    NSUInteger row = [indexPath row];
+//    NSDictionary *rowData = [self.computers objectAtIndex:row];
+//    UILabel *colorLabel = (UILabel *)[cell viewWithTag:kNameValueTag]; colorLabel.text = [rowData objectForKey:@"Color"];
+//    UILabel *nameLabel = (UILabel *)[cell viewWithTag:kColorValueTag]; nameLabel.text = [rowData objectForKey:@"Name"];
+    return cell;
+}
+
+#pragma mark -
+#pragma mark Table Delegate Methods
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    NSUInteger row = [indexPath row];
+//    NSString *shortMonth = [[self.mileageWeeks objectAtIndex:row] substringWithRange:NSMakeRange(0,3)];
+//    self.detailViewController.monthLabel.text = shortMonth;
+//    //    self.detailViewController.detailItem = shortMonth;
+//    //    President *prez = [self.list objectAtIndex:row];
+//    //    PresidentDetailController *childController = [[PresidentDetailController alloc] initWithStyle:UITableViewStyleGrouped];
+//    //    childController.title = prez.name; 
+//    //    childController.president = prez;
+//    //    [self.navigationController pushViewController:childController animated:YES];
 }
 
 @end

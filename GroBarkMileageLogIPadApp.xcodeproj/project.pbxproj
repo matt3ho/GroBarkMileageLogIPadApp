@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A56FE1A014A2E22500649EEB /* DispatchEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A56FE19F14A2E22500649EEB /* DispatchEntryCell.xib */; };
+		A56FE1A414A318A000649EEB /* MileageWeekLogObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A56FE1A314A318A000649EEB /* MileageWeekLogObject.m */; };
+		A56FE1A714A31C9D00649EEB /* DispatchEntryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A56FE1A614A31C9D00649EEB /* DispatchEntryObject.m */; };
 		A5C554DB149D5E1600B8D46D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C554DA149D5E1600B8D46D /* UIKit.framework */; };
 		A5C554DD149D5E1600B8D46D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C554DC149D5E1600B8D46D /* Foundation.framework */; };
 		A5C554DF149D5E1600B8D46D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C554DE149D5E1600B8D46D /* CoreGraphics.framework */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A56FE19F14A2E22500649EEB /* DispatchEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DispatchEntryCell.xib; sourceTree = "<group>"; };
+		A56FE1A214A318A000649EEB /* MileageWeekLogObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MileageWeekLogObject.h; sourceTree = "<group>"; };
+		A56FE1A314A318A000649EEB /* MileageWeekLogObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MileageWeekLogObject.m; sourceTree = "<group>"; };
+		A56FE1A514A31C9D00649EEB /* DispatchEntryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchEntryObject.h; sourceTree = "<group>"; };
+		A56FE1A614A31C9D00649EEB /* DispatchEntryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchEntryObject.m; sourceTree = "<group>"; };
 		A5C554D6149D5E1600B8D46D /* GroBarkMileageLogIPadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroBarkMileageLogIPadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C554DA149D5E1600B8D46D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A5C554DC149D5E1600B8D46D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,8 +125,13 @@
 			isa = PBXGroup;
 			children = (
 				A5C554E9149D5E1700B8D46D /* GroBarkAppDelegate.h */,
+				A56FE1A214A318A000649EEB /* MileageWeekLogObject.h */,
+				A56FE1A514A31C9D00649EEB /* DispatchEntryObject.h */,
+				A56FE1A614A31C9D00649EEB /* DispatchEntryObject.m */,
+				A56FE1A314A318A000649EEB /* MileageWeekLogObject.m */,
 				A5C554EA149D5E1700B8D46D /* GroBarkAppDelegate.m */,
 				A5C554EC149D5E1700B8D46D /* MainStoryboard.storyboard */,
+				A56FE19F14A2E22500649EEB /* DispatchEntryCell.xib */,
 				A5C554EF149D5E1700B8D46D /* GroBarkMasterViewController.h */,
 				A5C554F0149D5E1700B8D46D /* GroBarkMasterViewController.m */,
 				A5C554F2149D5E1700B8D46D /* GroBarkDetailViewController.h */,
@@ -232,6 +245,7 @@
 				A5C554E5149D5E1600B8D46D /* InfoPlist.strings in Resources */,
 				A5C554EE149D5E1700B8D46D /* MainStoryboard.storyboard in Resources */,
 				A5C55515149D5E6100B8D46D /* icon.png in Resources */,
+				A56FE1A014A2E22500649EEB /* DispatchEntryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +284,8 @@
 				A5C554EB149D5E1700B8D46D /* GroBarkAppDelegate.m in Sources */,
 				A5C554F1149D5E1700B8D46D /* GroBarkMasterViewController.m in Sources */,
 				A5C554F4149D5E1700B8D46D /* GroBarkDetailViewController.m in Sources */,
+				A56FE1A414A318A000649EEB /* MileageWeekLogObject.m in Sources */,
+				A56FE1A714A31C9D00649EEB /* DispatchEntryObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
