@@ -21,6 +21,8 @@
 @property (strong, nonatomic) NSString *month;
 @property (strong, nonatomic) IBOutlet UILabel *monthLabel;
 
+@property (strong, nonatomic) IBOutlet UIView *testLabel;
+
 @property (strong, nonatomic) IBOutlet UITableViewCell *tvCell;
 
 - (IBAction)textFieldDoneEditing:(id)sender;

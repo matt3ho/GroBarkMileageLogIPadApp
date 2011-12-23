@@ -6,6 +6,14 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
+//#import <QuartzCore/QuartzCore.h>
+//CGRect frame2 = CGRectMake(0, 0, 10, 20);
+//UILabel *label = [[UILabel alloc] initWithFrame:frame2];
+//label.text = @"Hello world";
+//[testLabel addSubview:label];
+//testLabel.backgroundColor = [UIColor blueColor];
+//testLabel.layer.cornerRadius = 8;
+
 #import "GroBarkDetailViewController.h"
 
 @interface GroBarkDetailViewController ()
@@ -20,6 +28,8 @@
 @synthesize masterPopoverController = _masterPopoverController;
 @synthesize month;
 @synthesize monthLabel;
+
+@synthesize testLabel;
 
 @synthesize tvCell;
 
