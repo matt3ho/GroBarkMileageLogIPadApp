@@ -10,10 +10,15 @@
 
 #import "GroBarkDetailViewController.h"
 
+#import "MileageWeekLogObject.h"
+
+#import "DispatchEntryObject.h"
+
 @implementation GroBarkMasterViewController
 
 @synthesize detailViewController = _detailViewController;
 @synthesize mileageWeeks;
+@synthesize mileageWeekLogObjects;
 
 - (void)awakeFromNib
 {
@@ -36,7 +41,7 @@
     self.detailViewController = (GroBarkDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionNone];
     
-    NSInteger numDates = 50;
+    NSInteger numDates = 12;
     NSMutableArray *initialDates = [[NSMutableArray alloc] initWithCapacity:numDates];
     NSDate *sunday_june_5_2011 = [[NSDate alloc] initWithTimeIntervalSince1970:1307268001];
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
@@ -68,6 +73,76 @@
     }
     
     self.mileageWeeks = mileageWeeksStrings;
+    
+    MileageWeekLogObject *mwo1 = [[MileageWeekLogObject alloc] init];
+    mwo1.odometerWeekStart = 12345;
+    mwo1.odometerWeekEnd = 12890;
+    mwo1.weekStart = [[NSDate alloc] init];
+    mwo1.truckNumber = @"123";
+    mwo1.trailerNumber = @"0-002";
+    mwo1.name = @"Bob Marley";
+    
+    DispatchEntryObject *deo1 = [[DispatchEntryObject alloc] init];
+    deo1.date = [[NSDate alloc] initWithTimeIntervalSince1970:1307268001];
+    deo1.origin = @"Seasme St.";
+    deo1.destination = @"Mars";
+    deo1.product = @"Real Steel";
+    deo1.quantity = @"100 kg";
+    deo1.bolPickUpLoc = @"somewhere1";
+    deo1.bolDropOffLoc = @"nowhere1";
+    deo1.dailyMileageON = 11;
+    deo1.dailyMileageQC = 12;
+    deo1.b_h = NO;
+    
+    DispatchEntryObject *deo2 = [[DispatchEntryObject alloc] init];
+    deo2.date = [[NSDate alloc] initWithTimeIntervalSince1970:1307268001];
+    deo2.origin = @"Waterloo";
+    deo2.destination = @"Jupiter";
+    deo2.product = @"Magic Boomboxes";
+    deo2.quantity = @"100 units";
+    deo2.bolPickUpLoc = @"japan";
+    deo2.bolDropOffLoc = @"china";
+    deo2.dailyMileageON = 123;
+    deo2.dailyMileageQC = 321;
+    deo2.b_h = YES;
+    
+    mwo1.dispatchEntryArray = [[NSArray alloc] initWithObjects:deo1, deo2, nil];
+    
+    MileageWeekLogObject *mwo2 = [[MileageWeekLogObject alloc] init];
+    mwo2.odometerWeekStart = 22345;
+    mwo2.odometerWeekEnd = 24679;
+    mwo2.weekStart = sunday_june_5_2011;
+    mwo2.truckNumber = @"456";
+    mwo2.trailerNumber = @"0-015";
+    mwo2.name = @"John Dylan";
+    
+    DispatchEntryObject *deo3 = [[DispatchEntryObject alloc] init];
+    deo3.date = [[NSDate alloc] initWithTimeIntervalSince1970:1307268001];
+    deo3.origin = @"Dylan's House";
+    deo3.destination = @"Microsoft";
+    deo3.product = @"CDs";
+    deo3.quantity = @"99.9 kg";
+    deo3.bolPickUpLoc = @"who knows";
+    deo3.bolDropOffLoc = @"who cares";
+    deo3.dailyMileageON = 938;
+    deo3.dailyMileageQC = 45;
+    deo3.b_h = YES;
+    
+    DispatchEntryObject *deo4 = [[DispatchEntryObject alloc] init];
+    deo4.date = [[NSDate alloc] initWithTimeIntervalSince1970:1307268001];
+    deo4.origin = @"Vancouver";
+    deo4.destination = @"Shanghai";
+    deo4.product = @"Robots";
+    deo4.quantity = @"2 units";
+    deo4.bolPickUpLoc = @"Saturn";
+    deo4.bolDropOffLoc = @"Uranaus";
+    deo4.dailyMileageON = 23;
+    deo4.dailyMileageQC = 312;
+    deo4.b_h = NO;
+    
+    mwo2.dispatchEntryArray = [[NSArray alloc] initWithObjects:deo3, deo4, nil];
+    
+    self.mileageWeekLogObjects = [[NSArray alloc] initWithObjects:mwo1, mwo2, mwo1, mwo2, mwo1, mwo2, nil];
 }
 
 - (void)viewDidUnload
@@ -127,9 +202,25 @@
 #pragma mark Table Delegate Methods
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    NSUInteger row = [indexPath row];
+//    NSString *shortMonth = [[self.mileageWeeks objectAtIndex:row] substringWithRange:NSMakeRange(0,3)];
+//    self.detailViewController.monthLabel.text = shortMonth;
+    
     NSUInteger row = [indexPath row];
-    NSString *shortMonth = [[self.mileageWeeks objectAtIndex:row] substringWithRange:NSMakeRange(0,3)];
-    self.detailViewController.monthLabel.text = shortMonth;
+    MileageWeekLogObject *mwlo = [self.mileageWeekLogObjects objectAtIndex:row];
+    
+    self.detailViewController.mileageWeekLogObject = mwlo;
+    self.detailViewController.odometerWeekStartTextField.text = [NSString stringWithFormat:@"%d", mwlo.odometerWeekStart];
+    self.detailViewController.odometerWeekEndTextField.text = [NSString stringWithFormat:@"%d", mwlo.odometerWeekEnd];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    self.detailViewController.monthLabel.text = [[dateFormatter stringFromDate:mwlo.weekStart] substringWithRange:NSMakeRange(0,3)];
+    self.detailViewController.truckNumberLabel.text = mwlo.truckNumber;
+    self.detailViewController.trailerNumberLabel.text = mwlo.trailerNumber;
+    self.detailViewController.nameLabel.text = mwlo.name;
+    
+    [self.detailViewController.dispatchEntryTable reloadData];
+    
 //    self.detailViewController.detailItem = shortMonth;
 //    President *prez = [self.list objectAtIndex:row];
 //    PresidentDetailController *childController = [[PresidentDetailController alloc] initWithStyle:UITableViewStyleGrouped];

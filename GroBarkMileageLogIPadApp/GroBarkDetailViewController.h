@@ -8,22 +8,31 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MileageWeekLogObject.h"
+
 @interface GroBarkDetailViewController : UIViewController <UISplitViewControllerDelegate, UITableViewDelegate, UITableViewDataSource> {
-    NSString *month;
     
-    UITableViewCell *tvCell;
+    UITableView *dispatchEntryTable;
+    UITableViewCell *dispatchEntryCell;
+    MileageWeekLogObject *mileageWeekLogObject;
 }
 
-@property (strong, nonatomic) id detailItem;
+//@property (strong, nonatomic) id detailItem;
+//@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+//@property (strong, nonatomic) NSString *month;
+//@property (strong, nonatomic) IBOutlet UILabel *monthLabel;
+//@property (strong, nonatomic) IBOutlet UIView *testLabel;
 
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) IBOutlet UITableView *dispatchEntryTable;
+@property (strong, nonatomic) IBOutlet UITableViewCell *dispatchEntryCell;
+@property (strong, nonatomic) IBOutlet MileageWeekLogObject *mileageWeekLogObject;
 
-@property (strong, nonatomic) NSString *month;
+@property (strong, nonatomic) IBOutlet UITextField *odometerWeekStartTextField;
+@property (strong, nonatomic) IBOutlet UITextField *odometerWeekEndTextField;
 @property (strong, nonatomic) IBOutlet UILabel *monthLabel;
-
-@property (strong, nonatomic) IBOutlet UIView *testLabel;
-
-@property (strong, nonatomic) IBOutlet UITableViewCell *tvCell;
+@property (strong, nonatomic) IBOutlet UILabel *truckNumberLabel;
+@property (strong, nonatomic) IBOutlet UILabel *trailerNumberLabel;
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 
 - (IBAction)textFieldDoneEditing:(id)sender;
 - (IBAction)backgroundTap:(id)sender;

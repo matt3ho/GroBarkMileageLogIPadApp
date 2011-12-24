@@ -13,9 +13,11 @@
 @interface GroBarkMasterViewController : UITableViewController 
 <UITableViewDelegate, UITableViewDataSource> {
     NSArray *mileageWeeks;
+    NSArray *mileageWeekLogObjects;
 }
 
 @property (strong, nonatomic) GroBarkDetailViewController *detailViewController;
 @property (strong, nonatomic) NSArray *mileageWeeks;
+@property (strong, nonatomic) NSArray *mileageWeekLogObjects;
 
 @end

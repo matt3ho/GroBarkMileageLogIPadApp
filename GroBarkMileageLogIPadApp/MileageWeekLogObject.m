@@ -10,4 +10,13 @@
 
 @implementation MileageWeekLogObject
 
+@synthesize weekStart;
+@synthesize weekEnd;
+@synthesize odometerWeekStart;
+@synthesize odometerWeekEnd;
+@synthesize truckNumber;
+@synthesize trailerNumber;
+@synthesize name;
+@synthesize dispatchEntryArray;
+
 @end

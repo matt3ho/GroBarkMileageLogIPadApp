@@ -19,4 +19,13 @@
     NSArray *dispatchEntryArray;
 }
 
+@property (strong, nonatomic) NSDate *weekStart;
+@property (strong, nonatomic) NSDate *weekEnd;
+@property (nonatomic) NSInteger odometerWeekStart;
+@property (nonatomic) NSInteger odometerWeekEnd;
+@property (strong, nonatomic) NSString *truckNumber;
+@property (strong, nonatomic) NSString *trailerNumber;
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSArray *dispatchEntryArray;
+
 @end

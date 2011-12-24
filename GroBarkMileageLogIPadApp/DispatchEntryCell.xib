@@ -57,6 +57,7 @@
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
+										<int key="IBUITag">1</int>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 										<string key="IBUIText">07/07/11</string>
@@ -90,6 +91,7 @@
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
+										<int key="IBUITag">2</int>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 										<string key="IBUIText">123 Fishbover Dr., Waterloo</string>
@@ -108,9 +110,11 @@
 										<string key="NSFrame">{{512, 7}, {48, 31}}</string>
 										<reference key="NSSuperview" ref="382931078"/>
 										<reference key="NSWindow"/>
+										<reference key="NSNextKeyView" ref="187601622"/>
 										<string key="NSReuseIdentifierKey">_NS:320</string>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
+										<int key="IBUITag">8</int>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 										<int key="IBUIContentVerticalAlignment">0</int>
 										<string key="IBUIText"/>
@@ -145,9 +149,11 @@
 										<string key="NSFrame">{{568, 7}, {48, 31}}</string>
 										<reference key="NSSuperview" ref="382931078"/>
 										<reference key="NSWindow"/>
+										<reference key="NSNextKeyView" ref="844099101"/>
 										<string key="NSReuseIdentifierKey">_NS:320</string>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
+										<int key="IBUITag">9</int>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 										<int key="IBUIContentVerticalAlignment">0</int>
 										<string key="IBUIText"/>
@@ -178,6 +184,7 @@
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIAutoresizesSubviews">NO</bool>
 										<int key="IBUIContentMode">4</int>
+										<int key="IBUITag">10</int>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 										<int key="IBUIContentHorizontalAlignment">0</int>
 										<int key="IBUIContentVerticalAlignment">0</int>
@@ -194,6 +201,7 @@
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
+										<int key="IBUITag">3</int>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 										<string key="IBUIText">456 Seasame St, Scarborough</string>
@@ -217,6 +225,7 @@
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
+										<int key="IBUITag">4</int>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 										<string key="IBUIText">Magic beans</string>
@@ -240,6 +249,7 @@
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
+										<int key="IBUITag">5</int>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 										<string key="IBUIText">100 KG</string>
@@ -263,6 +273,7 @@
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
+										<int key="IBUITag">6</int>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 										<string key="IBUIText">Bol drop off loc.</string>
@@ -281,11 +292,12 @@
 										<string key="NSFrame">{{452, 6}, {52, 88}}</string>
 										<reference key="NSSuperview" ref="382931078"/>
 										<reference key="NSWindow"/>
-										<reference key="NSNextKeyView"/>
+										<reference key="NSNextKeyView" ref="885169586"/>
 										<string key="NSReuseIdentifierKey">_NS:345</string>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
+										<int key="IBUITag">7</int>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 										<string key="IBUIText">Bol pick up loc.</string>
@@ -344,11 +356,11 @@
 			<array class="NSMutableArray" key="connectionRecords">
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">tvCell</string>
+						<string key="label">dispatchEntryCell</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="339466010"/>
 					</object>
-					<int key="connectionID">11</int>
+					<int key="connectionID">19</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -404,11 +416,11 @@
 							<reference ref="943032476"/>
 							<reference ref="227561385"/>
 							<reference ref="187601622"/>
-							<reference ref="885169586"/>
 							<reference ref="708913253"/>
 							<reference ref="863044451"/>
 							<reference ref="970769621"/>
 							<reference ref="430337747"/>
+							<reference ref="885169586"/>
 							<reference ref="710192155"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
@@ -487,7 +499,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">18</int>
+			<int key="maxID">20</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -509,27 +521,60 @@
 						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="detailDescriptionLabel">UILabel</string>
+						<string key="dispatchEntryCell">UITableViewCell</string>
+						<string key="mileageWeekLogObject">MileageWeekLogObject</string>
 						<string key="monthLabel">UILabel</string>
-						<string key="tvCell">UITableViewCell</string>
+						<string key="nameLabel">UILabel</string>
+						<string key="odometerWeekEndTextField">UITextField</string>
+						<string key="odometerWeekStartTextField">UITextField</string>
+						<string key="trailerNumberLabel">UILabel</string>
+						<string key="truckNumberLabel">UILabel</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="detailDescriptionLabel">
-							<string key="name">detailDescriptionLabel</string>
-							<string key="candidateClassName">UILabel</string>
+						<object class="IBToOneOutletInfo" key="dispatchEntryCell">
+							<string key="name">dispatchEntryCell</string>
+							<string key="candidateClassName">UITableViewCell</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="mileageWeekLogObject">
+							<string key="name">mileageWeekLogObject</string>
+							<string key="candidateClassName">MileageWeekLogObject</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="monthLabel">
 							<string key="name">monthLabel</string>
 							<string key="candidateClassName">UILabel</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="tvCell">
-							<string key="name">tvCell</string>
-							<string key="candidateClassName">UITableViewCell</string>
+						<object class="IBToOneOutletInfo" key="nameLabel">
+							<string key="name">nameLabel</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="odometerWeekEndTextField">
+							<string key="name">odometerWeekEndTextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="odometerWeekStartTextField">
+							<string key="name">odometerWeekStartTextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="trailerNumberLabel">
+							<string key="name">trailerNumberLabel</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="truckNumberLabel">
+							<string key="name">truckNumberLabel</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/GroBarkDetailViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">MileageWeekLogObject</string>
+					<string key="superclassName">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/MileageWeekLogObject.h</string>
 					</object>
 				</object>
 			</array>

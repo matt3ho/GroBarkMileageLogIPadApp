@@ -62,28 +62,28 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="September" lineBreakMode="tailTruncation" minimumFontSize="17" id="QMR-WG-8h1">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="17" id="QMR-WG-8h1">
                                 <rect key="frame" x="584" y="0.0" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="09-192" lineBreakMode="tailTruncation" minimumFontSize="17" id="GdL-aJ-EMb">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="17" id="GdL-aJ-EMb">
                                 <rect key="frame" x="584" y="29" width="54" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="000" lineBreakMode="tailTruncation" minimumFontSize="17" id="B01-IN-gtO">
-                                <rect key="frame" x="584" y="61" width="29" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="17" id="B01-IN-gtO">
+                                <rect key="frame" x="584" y="61" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Trolley Chris" lineBreakMode="tailTruncation" minimumFontSize="17" id="D4T-pH-OOq">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="17" id="D4T-pH-OOq">
                                 <rect key="frame" x="584" y="87" width="96" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -211,7 +211,13 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="52"/>
                     <connections>
+                        <outlet property="dispatchEntryTable" destination="GL4-X7-eNZ" id="loX-xi-Lgb"/>
                         <outlet property="monthLabel" destination="QMR-WG-8h1" id="3M7-qW-hKv"/>
+                        <outlet property="nameLabel" destination="D4T-pH-OOq" id="Yqf-R2-MeO"/>
+                        <outlet property="odometerWeekEndTextField" destination="oVg-Ep-1Os" id="Q9i-xm-hbO"/>
+                        <outlet property="odometerWeekStartTextField" destination="YuC-gW-IR4" id="3TC-E8-Iz1"/>
+                        <outlet property="trailerNumberLabel" destination="B01-IN-gtO" id="oD9-Z6-YMG"/>
+                        <outlet property="truckNumberLabel" destination="GdL-aJ-EMb" id="o6X-dH-32G"/>
                     </connections>
                 </viewController>
             </objects>
@@ -273,14 +279,22 @@
             <relationships>
                 <relationship kind="action" name="backgroundTap:"/>
                 <relationship kind="action" name="textFieldDoneEditing:"/>
-                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="dispatchEntryCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="dispatchEntryTable" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="mileageWeekLogObject" candidateClass="MileageWeekLogObject"/>
                 <relationship kind="outlet" name="monthLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="testLabel" candidateClass="UIView"/>
-                <relationship kind="outlet" name="tvCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="odometerWeekEndTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="odometerWeekStartTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="trailerNumberLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="truckNumberLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="GroBarkMasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GroBarkMasterViewController.h"/>
+        </class>
+        <class className="MileageWeekLogObject" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MileageWeekLogObject.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
