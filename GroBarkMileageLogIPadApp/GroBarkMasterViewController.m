@@ -88,8 +88,8 @@
     deo1.destination = @"Mars";
     deo1.product = @"Real Steel";
     deo1.quantity = @"100 kg";
-    deo1.bolPickUpLoc = @"somewhere1";
-    deo1.bolDropOffLoc = @"nowhere1";
+    deo1.bolPickUpLoc = @"123n3id";
+    deo1.bolDropOffLoc = @"532in3i";
     deo1.dailyMileageON = 11;
     deo1.dailyMileageQC = 12;
     deo1.b_h = NO;
@@ -100,8 +100,8 @@
     deo2.destination = @"Jupiter";
     deo2.product = @"Magic Boomboxes";
     deo2.quantity = @"100 units";
-    deo2.bolPickUpLoc = @"japan";
-    deo2.bolDropOffLoc = @"china";
+    deo2.bolPickUpLoc = @"23939n";
+    deo2.bolDropOffLoc = @"32k3n";
     deo2.dailyMileageON = 123;
     deo2.dailyMileageQC = 321;
     deo2.b_h = YES;
@@ -122,8 +122,8 @@
     deo3.destination = @"Microsoft";
     deo3.product = @"CDs";
     deo3.quantity = @"99.9 kg";
-    deo3.bolPickUpLoc = @"who knows";
-    deo3.bolDropOffLoc = @"who cares";
+    deo3.bolPickUpLoc = @"230n30";
+    deo3.bolDropOffLoc = @"239j39";
     deo3.dailyMileageON = 938;
     deo3.dailyMileageQC = 45;
     deo3.b_h = YES;
@@ -134,8 +134,8 @@
     deo4.destination = @"Shanghai";
     deo4.product = @"Robots";
     deo4.quantity = @"2 units";
-    deo4.bolPickUpLoc = @"Saturn";
-    deo4.bolDropOffLoc = @"Uranaus";
+    deo4.bolPickUpLoc = @"23n38";
+    deo4.bolDropOffLoc = @"23993n";
     deo4.dailyMileageON = 23;
     deo4.dailyMileageQC = 312;
     deo4.b_h = NO;

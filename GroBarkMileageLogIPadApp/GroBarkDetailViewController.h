@@ -25,7 +25,7 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *dispatchEntryTable;
 @property (strong, nonatomic) IBOutlet UITableViewCell *dispatchEntryCell;
-@property (strong, nonatomic) IBOutlet MileageWeekLogObject *mileageWeekLogObject;
+@property (strong, nonatomic) MileageWeekLogObject *mileageWeekLogObject;
 
 @property (strong, nonatomic) IBOutlet UITextField *odometerWeekStartTextField;
 @property (strong, nonatomic) IBOutlet UITextField *odometerWeekEndTextField;

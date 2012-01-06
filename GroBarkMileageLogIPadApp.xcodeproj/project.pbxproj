@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A56FE1A014A2E22500649EEB /* DispatchEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A56FE19F14A2E22500649EEB /* DispatchEntryCell.xib */; };
 		A56FE1A414A318A000649EEB /* MileageWeekLogObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A56FE1A314A318A000649EEB /* MileageWeekLogObject.m */; };
 		A56FE1A714A31C9D00649EEB /* DispatchEntryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A56FE1A614A31C9D00649EEB /* DispatchEntryObject.m */; };
 		A56FE1AC14A46E9C00649EEB /* RoundedRectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A56FE1AB14A46E9C00649EEB /* RoundedRectLabel.m */; };
@@ -26,6 +25,10 @@
 		A5C55506149D5E1700B8D46D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5C55504149D5E1700B8D46D /* InfoPlist.strings */; };
 		A5C55509149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C55508149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.m */; };
 		A5C55515149D5E6100B8D46D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5C55514149D5E6100B8D46D /* icon.png */; };
+		A5DF704A14B6C9D1000E4DED /* UICustomSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DF704914B6C9D1000E4DED /* UICustomSwitch.m */; };
+		A5DF704F14B6CBB4000E4DED /* switchBlueBg.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DF704C14B6CBB4000E4DED /* switchBlueBg.png */; };
+		A5DF705014B6CBB4000E4DED /* switchOffPlain.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DF704D14B6CBB4000E4DED /* switchOffPlain.png */; };
+		A5DF705114B6CBB4000E4DED /* switchThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DF704E14B6CBB4000E4DED /* switchThumb.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A56FE19F14A2E22500649EEB /* DispatchEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DispatchEntryCell.xib; sourceTree = "<group>"; };
 		A56FE1A214A318A000649EEB /* MileageWeekLogObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MileageWeekLogObject.h; sourceTree = "<group>"; };
 		A56FE1A314A318A000649EEB /* MileageWeekLogObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MileageWeekLogObject.m; sourceTree = "<group>"; };
 		A56FE1A514A31C9D00649EEB /* DispatchEntryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchEntryObject.h; sourceTree = "<group>"; };
@@ -68,6 +70,11 @@
 		A5C55507149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroBarkMileageLogIPadAppTests.h; sourceTree = "<group>"; };
 		A5C55508149D5E1700B8D46D /* GroBarkMileageLogIPadAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroBarkMileageLogIPadAppTests.m; sourceTree = "<group>"; };
 		A5C55514149D5E6100B8D46D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		A5DF704814B6C9D1000E4DED /* UICustomSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomSwitch.h; sourceTree = "<group>"; };
+		A5DF704914B6C9D1000E4DED /* UICustomSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomSwitch.m; sourceTree = "<group>"; };
+		A5DF704C14B6CBB4000E4DED /* switchBlueBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchBlueBg.png; sourceTree = "<group>"; };
+		A5DF704D14B6CBB4000E4DED /* switchOffPlain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchOffPlain.png; sourceTree = "<group>"; };
+		A5DF704E14B6CBB4000E4DED /* switchThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchThumb.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +134,8 @@
 		A5C554E0149D5E1600B8D46D /* GroBarkMileageLogIPadApp */ = {
 			isa = PBXGroup;
 			children = (
+				A5DF704814B6C9D1000E4DED /* UICustomSwitch.h */,
+				A5DF704914B6C9D1000E4DED /* UICustomSwitch.m */,
 				A56FE1AA14A46E9C00649EEB /* RoundedRectLabel.h */,
 				A56FE1AB14A46E9C00649EEB /* RoundedRectLabel.m */,
 				A5C554E9149D5E1700B8D46D /* GroBarkAppDelegate.h */,
@@ -136,7 +145,6 @@
 				A56FE1A314A318A000649EEB /* MileageWeekLogObject.m */,
 				A5C554EA149D5E1700B8D46D /* GroBarkAppDelegate.m */,
 				A5C554EC149D5E1700B8D46D /* MainStoryboard.storyboard */,
-				A56FE19F14A2E22500649EEB /* DispatchEntryCell.xib */,
 				A5C554EF149D5E1700B8D46D /* GroBarkMasterViewController.h */,
 				A5C554F0149D5E1700B8D46D /* GroBarkMasterViewController.m */,
 				A5C554F2149D5E1700B8D46D /* GroBarkDetailViewController.h */,
@@ -149,6 +157,9 @@
 		A5C554E1149D5E1600B8D46D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A5DF704C14B6CBB4000E4DED /* switchBlueBg.png */,
+				A5DF704D14B6CBB4000E4DED /* switchOffPlain.png */,
+				A5DF704E14B6CBB4000E4DED /* switchThumb.png */,
 				A5C55514149D5E6100B8D46D /* icon.png */,
 				A5C554E2149D5E1600B8D46D /* GroBarkMileageLogIPadApp-Info.plist */,
 				A5C554E3149D5E1600B8D46D /* InfoPlist.strings */,
@@ -250,7 +261,9 @@
 				A5C554E5149D5E1600B8D46D /* InfoPlist.strings in Resources */,
 				A5C554EE149D5E1700B8D46D /* MainStoryboard.storyboard in Resources */,
 				A5C55515149D5E6100B8D46D /* icon.png in Resources */,
-				A56FE1A014A2E22500649EEB /* DispatchEntryCell.xib in Resources */,
+				A5DF704F14B6CBB4000E4DED /* switchBlueBg.png in Resources */,
+				A5DF705014B6CBB4000E4DED /* switchOffPlain.png in Resources */,
+				A5DF705114B6CBB4000E4DED /* switchThumb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +305,7 @@
 				A56FE1A414A318A000649EEB /* MileageWeekLogObject.m in Sources */,
 				A56FE1A714A31C9D00649EEB /* DispatchEntryObject.m in Sources */,
 				A56FE1AC14A46E9C00649EEB /* RoundedRectLabel.m in Sources */,
+				A5DF704A14B6C9D1000E4DED /* UICustomSwitch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

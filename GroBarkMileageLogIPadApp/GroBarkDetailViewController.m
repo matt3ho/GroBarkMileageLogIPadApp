@@ -156,28 +156,28 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *DispatchEntryCellIdentifier = @"DispatchEntryCellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: DispatchEntryCellIdentifier];
-    if (cell == nil) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"DispatchEntryCell"
-                                                     owner:self options:nil];
-        if ([nib count] > 0) { 
-            cell = self.dispatchEntryCell;
-        } else {
-            NSLog(@"failed to load CustomCell nib file!");
-        }
-    }
+//    if (cell == nil) {
+//        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"DispatchEntryCell"
+//                                                     owner:self options:nil];
+//        if ([nib count] > 0) { 
+//            cell = self.dispatchEntryCell;
+//        } else {
+//            NSLog(@"failed to load CustomCell nib file!");
+//        }
+//    }
     
     if (cell != nil)
     {
-        UILabel *dateLabel = (UILabel *) [self.dispatchEntryCell.contentView viewWithTag: kDateTag];
-        UILabel *originLabel = (UILabel *) [self.dispatchEntryCell.contentView viewWithTag: kOriginTag];
-        UILabel *destinationLabel = (UILabel *) [self.dispatchEntryCell.contentView viewWithTag: kDestinationTag];
-        UILabel *productLabel = (UILabel *) [self.dispatchEntryCell.contentView viewWithTag: kProductTag];
-        UILabel *quantityLabel = (UILabel *) [self.dispatchEntryCell.contentView viewWithTag: kQuantityTag];
-        UILabel *bolPickUpLocLabel = (UILabel *) [self.dispatchEntryCell.contentView viewWithTag: kBolPickUpTag];
-        UILabel *bolDropOffLocLabel = (UILabel *) [self.dispatchEntryCell.contentView viewWithTag: kBolDropOffTag];
-        UITextField *dailyMileageON = (UITextField *) [self.dispatchEntryCell.contentView viewWithTag: kDailyMileageONTag];
-        UITextField *dailyMileageQB = (UITextField *) [self.dispatchEntryCell.contentView viewWithTag: kDailyMileageQBTag];
-        UISwitch *b_h = (UISwitch *) [self.dispatchEntryCell.contentView viewWithTag: kB_HTag];
+        UILabel *dateLabel = (UILabel *) [cell.contentView viewWithTag: kDateTag];
+        UILabel *originLabel = (UILabel *) [cell.contentView viewWithTag: kOriginTag];
+        UILabel *destinationLabel = (UILabel *) [cell.contentView viewWithTag: kDestinationTag];
+        UILabel *productLabel = (UILabel *) [cell.contentView viewWithTag: kProductTag];
+        UILabel *quantityLabel = (UILabel *) [cell.contentView viewWithTag: kQuantityTag];
+        UILabel *bolPickUpLocLabel = (UILabel *) [cell.contentView viewWithTag: kBolPickUpTag];
+        UILabel *bolDropOffLocLabel = (UILabel *) [cell.contentView viewWithTag: kBolDropOffTag];
+        UITextField *dailyMileageON = (UITextField *) [cell.contentView viewWithTag: kDailyMileageONTag];
+        UITextField *dailyMileageQB = (UITextField *) [cell.contentView viewWithTag: kDailyMileageQBTag];
+        UISwitch *b_h = (UISwitch *) [cell.contentView viewWithTag: kB_HTag];
         
         NSUInteger row = [indexPath row];
         DispatchEntryObject *deo = [self.mileageWeekLogObject.dispatchEntryArray objectAtIndex:row];
